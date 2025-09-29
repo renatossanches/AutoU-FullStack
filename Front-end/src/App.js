@@ -1,12 +1,17 @@
-import React, { useState } from "react";
-import Sidebar from "./components/Sidebar";
+import React from "react";
+import Sidebar from "./components/sidebar/Sidebar";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   return (
-    <div className="app flex h-screen">
-      <Sidebar />
+    <BrowserRouter>
+    <div>
+      <div className="app flex h-screen">
+        <Sidebar />
+      </div>
     </div>
+    </BrowserRouter>
   );
 }
 
